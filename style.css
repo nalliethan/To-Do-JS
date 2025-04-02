@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    margin-top: 100px;
+    padding: 20px;
+    max-height: 400px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header{
+    padding: 10px 15px;
+    background-color: #a31d1d;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.header i{
+    margin-left: 10px;
+}
+
+.input-box{
+    /* padding: 10px 20px; */
+    background-color: #f8f2de;
+    margin-block: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+}
+
+.input-box input{
+    background: transparent;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    padding:0 20px;
+}
+
+.input-box button{
+  width: 12%;
+  border-radius: 8px;   
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color:#a31d1d;
+}
+
+.input-box button:hover{
+    opacity: 0.8;
+}
+
+.list-container{
+    height: 200px;
+    overflow-y: auto;
+}
+
+ul li{
+    list-style: none;
+    padding-block: 10px;
+    border-bottom: 2px solid #ecdcbf;
+    display: flex; 
+    align-items: center;   
+    text-align: left;
+    cursor: pointer;
+}
+
+ul li span{
+    flex: 1;
+}
+
+ul li i{
+    height: 20px;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+ul li.checked span{
+    text-decoration: line-through;
+    color: gray;
+}
+
+ul li i.ri-circle-line,
+ul li i.ri-checkbox-circle-fill{
+    color: #a31d1d;
+}
+
+ul li i.ri-delete-bin-6-line{
+    color: #767474;
+}
